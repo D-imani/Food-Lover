@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            width: 400px;
+        }
+        h2{
+            text-align: center;
+            font-size: 18px;
+        }
+        p{
+            text-align: center;
+            line-height: 1.5;
+        }
+        a{
+            color: #c8a9e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a::after{
+            color: #ff4092;
+            text-decoration: underline ;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            background-image:linear-gradient(#ff6fb6, white );
+            color: #ff4092 ;
+            font-size: 20px ;
+            padding: 10px;
+            border: 1px solid white ;
+            box-shadow: 0px 1px 5px 0px;
+            border-radius: 15px;
+            transition: 200ms ease;
+        }
+        button:hover{
+            border: 1px, solid, white;
+            color: #ff4092;
+            background-image:linear-gradient(white ,#ff6fb6);
+        }
+        hr{
+            color: white;
+        }
+        .love{
+            color: #c8a9e2;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 600px;
+            padding:20px;
+            background-color: #ff4092;
+            border-radius: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Food <span class="love">Lover</span> in the house!</h1>
+    <div class="image">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/630/original/Image.jpg?1721079950"
+        alt="Lady holding ChopSticks"/>
+    </div>
+    <div class="def">
+        <p>You must be wondering, why food lover🤨? <br>
+        Well, I'm always looking for a new culinary experience,
+        an opportunity to try out new foods from different cultures and countries, 
+        from the warmth of homemade dishes to the tantalizing allure of exotic cuisines.        
+    </p>
+    <hr>
+    <h2><strong><em>" Each bite tells a story " </em></strong></h2>
+    <hr>
+    <p>Recently, I visited a Korean restaurant and just wow!
+        I managed to try out their chicken, the all-time favourite
+        <a href="https://en.wikipedia.org/wiki/Kimchi" target="_blank">Kimchi</a>, dumplings and a couple of side dishes.
+        Apart from bringing the spice and tanginess to your meal,
+        Kimchi is a good source of sodium, fiber, vitamins, minerals, has antioxidants that help your <body>
+        ward off illness and stay healthy, it's also a probiotic!😉 Imagine that!
+    </p>
+    </div>
+    <button>Join me on this journey</button>
+</div>
+<script>
+    function joinMe(){
+        let name = prompt("What's your name?");
+        let request = prompt("Would you like to join the foodlovers club?(Yes/No)");
+
+        if (request === "Yes") {
+            alert("Welcome " + name + "! To the food lovers club!");
+        }else{
+            alert("Sad to see you go😕");
+        }
+    }
+    
+    let join = document.querySelector("button");
+
+    join.addEventListener("click", joinMe);
+</script>
+</body>
+</html>
